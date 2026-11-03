@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>제레미 수익 파이프라인</title>
+  <meta name="description" content="제레미의 수입 구조를 노드로 보는 관리용 페이지입니다. 금액은 적지 않습니다.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233182f6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="fonts/pretendard.css">
+  <link rel="stylesheet" href="flow.css">
+</head>
+<body>
+  <a class="skip" href="#flow">구조로 건너뛰기</a>
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.2"/><circle cx="6" cy="17" r="2.2"/><circle cx="17" cy="12" r="2.2"/><path d="M8 7h4a4 4 0 0 1 4 4v0M8 17h4a4 4 0 0 0 4-4"/></svg>
+      </span>
+      <span class="brand-tx">
+        <strong id="brand-name">제레미 수익 파이프라인</strong>
+        <small>관리용 · 금액 없음</small>
+      </span>
+    </div>
+    <div class="top-actions">
+      <span class="crumb" id="crumb">수입 구조</span>
+      <button type="button" class="btn" id="clear" hidden>선택 해제</button>
+    </div>
+  </header>
+  <main class="canvas" id="canvas">
+    <p class="hint" id="hint">노드를 누르면 설명이 열려요.</p>
+    <div id="problems"></div>
+    <div class="flow" id="flow" aria-label="수익 파이프라인"></div>
+  </main>
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="panel" id="panel" aria-label="노드 설명" aria-hidden="true">
+    <div class="panel-in" id="panel-in"></div>
+  </aside>
+  <div id="live" class="sr" role="status" aria-live="polite"></div>
+  <noscript><p class="problems">이 페이지는 자바스크립트가 필요합니다.</p></noscript>
+  <script src="data.js"></script>
+  <script src="flow.js"></script>
+</body>
+</html>
