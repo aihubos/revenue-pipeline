@@ -24,7 +24,7 @@ python3 -m http.server 8080
 | `title` | 노드에 크게 보이는 이름 |
 | `subtitle` | 노드 아래 한 줄. 없어도 됩니다. |
 | `role` | `start` 시작, `main` 본업(파란 강조), `side` 부업, `item` 하위 |
-| `icon` | `flow`, `users`, `book`, `home`, `brick`, `play`. 없어도 됩니다. |
+| `icon` | `flow`, `users`, `book`, `home`, `brick`, `play`, `shield`, `pen`, `camera`. 없어도 됩니다. |
 | `details` | 노드를 눌렀을 때 열리는 설명. `label` 과 `text` 를 원하는 만큼 둡니다. |
 | `children` | 다음에 이어지는 노드 목록 |
 

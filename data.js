@@ -11,7 +11,7 @@
  * - title     노드에 크게 보이는 이름
  * - subtitle  노드에 작게 보이는 한 줄. 없어도 됩니다.
  * - role      start(시작) | main(본업, 파란 강조) | side(부업) | item(하위)
- * - icon      flow, users, book, home, brick, play 중 하나. 없어도 됩니다.
+ * - icon      flow, users, book, home, brick, play, shield, pen, camera 중 하나. 없어도 됩니다.
  * - details   노드를 눌렀을 때 열리는 설명. label 과 text 를 원하는 만큼 둡니다.
  * - children  다음에 이어지는 노드 목록. 없으면 빼도 됩니다.
  *
@@ -113,15 +113,54 @@ window.PIPELINE = {
       ]
     },
     {
-      id: "media",
-      title: "유튜브/블로그",
-      subtitle: "글·영상, 콘텐츠와 광고",
+      id: "insurance",
+      title: "온라인 보험 DB",
+      subtitle: "온라인으로 모은 보험 상담 DB",
+      role: "side",
+      icon: "shield",
+      details: [
+        { label: "무엇인지", text: "온라인으로 보험 상담을 원하는 사람의 신청(DB)을 모아 수입으로 잇는 부업 갈래예요." },
+        { label: "고객", text: "보험 상담을 원하는 사람, DB가 필요한 곳" },
+        { label: "유입 경로", text: "예: 온라인 광고, 신청 페이지" },
+        { label: "상태", text: "부업" }
+      ]
+    },
+    {
+      id: "blog",
+      title: "개인 블로그",
+      subtitle: "글로 쌓는 콘텐츠와 광고",
+      role: "side",
+      icon: "pen",
+      details: [
+        { label: "무엇인지", text: "개인 블로그에 글을 올리는 부업 갈래예요. 콘텐츠와 광고로 이어집니다." },
+        { label: "고객", text: "글을 읽는 사람" },
+        { label: "유입 경로", text: "예: 검색, 블로그 이웃" },
+        { label: "상태", text: "부업" }
+      ]
+    },
+    {
+      id: "youtube",
+      title: "유튜브",
+      subtitle: "영상·쇼츠, 콘텐츠와 광고",
       role: "side",
       icon: "play",
       details: [
-        { label: "무엇인지", text: "글과 영상을 올리는 부업 갈래예요. 콘텐츠와 광고로 이어집니다." },
-        { label: "고객", text: "영상이나 글을 보는 사람" },
-        { label: "유입 경로", text: "유튜브, 블로그" },
+        { label: "무엇인지", text: "유튜브에 영상과 쇼츠를 올리는 부업 갈래예요. 콘텐츠와 광고로 이어집니다." },
+        { label: "고객", text: "영상을 보는 사람" },
+        { label: "유입 경로", text: "예: 유튜브 추천, 검색" },
+        { label: "상태", text: "부업" }
+      ]
+    },
+    {
+      id: "insta",
+      title: "인스타그램",
+      subtitle: "사진·릴스로 알리는 채널",
+      role: "side",
+      icon: "camera",
+      details: [
+        { label: "무엇인지", text: "인스타그램에 사진과 릴스를 올리는 부업 갈래예요. 알림과 협업으로 이어집니다." },
+        { label: "고객", text: "피드와 릴스를 보는 사람" },
+        { label: "유입 경로", text: "예: 릴스 추천, 해시태그" },
         { label: "상태", text: "부업" }
       ]
     }

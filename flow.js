@@ -33,7 +33,10 @@
     book: '<path d="M5 5.5h5.8A2.2 2.2 0 0 1 13 7.7V19H7.2A2.2 2.2 0 0 0 5 16.8z"/><path d="M19 5.5h-5.8A2.2 2.2 0 0 0 11 7.7V19h5.8A2.2 2.2 0 0 0 19 16.8z"/>',
     home: '<path d="M4 11.2 12 5l8 6.2V20H4z"/><path d="M10 20v-5.5h4V20"/>',
     brick: '<rect x="3" y="11" width="18" height="8" rx="1.6"/><path d="M6.5 11V8h2.6v3M10.7 11V8h2.6v3M14.9 11V8H17.5v3"/>',
-    play: '<path d="M9 7.2v9.6l8.2-4.8L9 7.2z"/>'
+    play: '<path d="M9 7.2v9.6l8.2-4.8L9 7.2z"/>',
+    shield: '<path d="M12 3.5 19 6v5.5c0 4.3-3 7.6-7 9-4-1.4-7-4.7-7-9V6z"/><path d="m9 12 2.2 2.2L15.5 10"/>',
+    pen: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',
+    camera: '<rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.6" cy="7.4" r=".6"/>'
   };
 
   function iconSvg(node) {
